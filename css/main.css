@@ -1,0 +1,196 @@
+/* Reset Rule */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* Red Header Bar */
+header {
+    background-color: #d2232a; /* Red */
+    width: 100%;
+    height: 8vh;
+}
+
+#headerlogo {
+    margin: 25px 10px 10px 10px;
+    float: left;
+}
+
+#headername {
+    margin: 25px 10px 10px 10px;
+    float: left;
+}
+
+header img {
+    margin-top: 2%;
+    max-width: 220px;
+}
+
+/* Main Content */
+main {
+    width: 80%;
+    max-width: 840px;
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 25px;
+}
+
+#logo {
+    max-width: 260px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#headshot {
+    max-width: 200px;
+    width: 100%;
+}
+
+/* Text Formatting */
+h1 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-family: 'Questrial';
+    font-size: 1.5rem;
+    color: white;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #fefefe; /* White */
+}
+
+ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 2.5px;
+    font-size: 0.8rem;
+    text-align: center;
+    list-style-type: none;
+    color: white;
+    text-shadow: black 1px 0 10px;
+}
+
+p {
+    padding-top: 10px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: black 1px 0 10px;
+}
+
+hr {
+    height: 1px;
+    background-color: #fefefe; /* White */
+    max-width: 320px;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+/* LinkedIn Sprite */
+.my-image {
+    background-image: url("http://www.syncura.net/downloads/image_sprite_1800_600.png");
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    background-position: 780px 60px;
+    background-size: 360px;
+    margin-top: 20px;
+}
+
+.my-image:hover {
+    background-position: 780px 0;
+}
+
+/* Logo Hang on Hover */
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+.hvr-hang {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+}
+
+.hvr-hang:hover,
+.hvr-hang:focus,
+.hvr-hang:active {
+    -webkit-animation-name: hvr-hang-sink, hvr-hang;
+    animation-name: hvr-hang-sink, hvr-hang;
+    -webkit-animation-duration: 0.3s, 1.5s;
+    animation-duration: 0.3s, 1.5s;
+    -webkit-animation-delay: 0s, 0.3s;
+    animation-delay: 0s, 0.3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
