@@ -18,55 +18,73 @@
     <![endif]-->
 </head>
 
-<body data-vide-bg="img/starsa.mp4" style="position: relative;">
+<body>
+    <div data-vide-bg="img/starsa.mp4" style="position: relative;">
+    <div class="wrapper animated fadeInUpBig">
 
-    <header>
-    	<div id="headerlogo">
-    		<a href="index.html" title="Return to home"><img src="img/headerlogo2.png" title="Welcome to my website. My name is Ryan" alt="Hi!" /></a>
-    	</div>
+        <header>
+        	<div id="headerlogo">
+        		<a href="index.html" title="Return to home"><img src="img/headerlogo2.png" title="Welcome to my website. My name is Ryan" alt="Hi!" /></a>
+        	</div>
+        </header>
 
-    	<div id="headername">
-    		<h3>RYAN J. BLACK</h3>
-    		<p>SEO | web design</p>
-    	</div>
-    </header>
-
-    <main class="animated fadeInUpBig main">
-        <img src="img/resume.png" alt="It's me!" title="Ryan Black Headshot" class="hvr-hang" id="headshot" />
-        <h1>ryan black</h1>
-        <hr />
-
-        <section>
-
-            <article>
+        <main class="header">
+            <a href="http://www.blackjosephryan.com" target="_blank"><img src="img/resume.png" alt="It's me!" title="what a handsome fellow - click to see his portfolio!" class="hvr-hang" id="headshot" /></a>
+            <h1>ryan black</h1>
+            <hr />
             <h2>SEO | web design</h2>
+        </main>
 
-                <p>professional experience</p>
-                <ul>
-                    <li>web writing (seo, yoast)</li>
-                    <li>marketing</li>
-                    <li>technical writing</li>
-                    <li>graphic design + layout</li>
-                    <li>editing</li>
-                </ul>
-                <p>education</p>
-                <ul>
-                    <li>journalism (USF | b.a. 2015)</li>
-                    <li>web design (UF | m.a. 2018 ex.)</li>
-                </ul>
-            </article>
+        <aside class="main">
+            <h2>work skills</h2>
+            <ul>
+                <li>web writing (seo, yoast)</li>
+                <li>marketing</li>
+                <li>technical writing</li>
+                <li>graphic design + layout</li>
+                <li>editing</li>
+            </ul>
+        </aside>
 
-        </section>
+        <aside class="aside aside-1">
+			<a href="http://www.blackjosephryan.com"  target="_blank" title="Ryan Black logo"><img src="img/logotry.png" alt="Ryan J. Black logo" title="click to see my portfolio, it's out of this world!" class="hvr-hang" /></a>
+            <h2 class="top">work experience</h2>
+            <ul>
+                <li>LawnPartsPro (Aug. 2016 - Present)</li>
+                <li>Ultra Clean Systems (Jan. - Dec. 2015)</li>
+                <li>USF Bullpen (2013 - 2015)</li>
+            </ul>
+            <h2>education</h2>
+            <ul>
+                <li>journalism (USF | b.a. 2015)</li>
+                <li>web design (UF | m.a. 2018 ex.)</li>
+            </ul>
+        </aside>
 
-        <a href="http://www.blackjosephryan.com" title="click to see my portfolio, it's out of this world!"><img src="img/logotry.png" alt="Ryan J. Black logo" title="Ryan Black logo" id="logo" /></a>
+        <aside class="aside aside-2">
+                <h2>technical proficiencies</h2>
+                <div id="canvas-holder">
+                    <canvas id="chart-area"></canvas>
+                </div>
+                <div id="canvas-holder2">
+            		<canvas id="chart-area2"></canvas>
+            	</div>
+        </aside>
 
-        <a href="http://www.linkedin.com/in/blackjosephryan"><div class="my-image"></div></a>
+        <article class="footer">
+            <h2 class="tops">contact me</h2>
+            <a href="http://www.linkedin.com/in/blackjosephryan"><div class="my-image"></div></a>
+        </article>
 
-    </main>
+    </div>
+    </div>
+<footer></footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/jquery.vide.min.js"></script>
+    <script src="js/Chart.bundle.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

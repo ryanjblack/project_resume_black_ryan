@@ -1,4 +1,4 @@
-/* Reset Rule */
+/* Reset Rule and Formatting */
 * {
     margin: 0;
     padding: 0;
@@ -7,59 +7,10 @@
 
 article,
 aside,
-details,
-figcaption,
-figure,
 footer,
 header,
-main,
-nav,
-section,
-summary {
+main, {
     display: block;
-}
-
-/* Red Header Bar */
-header {
-    background-color: #d2232a; /* Red */
-    width: 100%;
-    height: 8vh;
-}
-
-#headerlogo {
-    margin: 25px 10px 10px 10px;
-    float: left;
-}
-
-#headername {
-    margin: 25px 10px 10px 10px;
-    float: left;
-}
-
-header img {
-    margin-top: 2%;
-    max-width: 220px;
-}
-
-/* Main Content */
-main {
-    width: 80%;
-    max-width: 840px;
-    margin: auto;
-    text-align: center;
-    padding: 2%;
-    margin-bottom: 25px;
-}
-
-#logo {
-    max-width: 260px;
-    width: 100%;
-    margin-top: 20px;
-}
-
-#headshot {
-    max-width: 200px;
-    width: 100%;
 }
 
 /* Text Formatting */
@@ -76,6 +27,7 @@ h2 {
     font-family: 'Questrial';
     font-size: 1.5rem;
     color: white;
+    padding: 10px 0 10px 0;
 }
 
 h3 {
@@ -108,8 +60,111 @@ hr {
     max-width: 320px;
     width: 100%;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 5px;
+}
+
+.top {
+    padding-top: 1em;
+}
+
+/* Personal Logo */
+#headerlogo {
+    margin: auto;
+}
+
+#headshot {
+    max-width: 200px;
+    width: 100%;
+}
+
+/* Main Content */
+main {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+/* Main Content Wrapper - Flexbox Model */
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    padding: 2em;
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+#canvas-holder {
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+    background-color: grey;
+}
+
+#canvas-holder2 {
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+    background-color: red;
+}
+
+.footer {
+    background: rgba(192, 192, 192, 0.3);
+}
+
+.main {
+    background: rgba(192, 192, 192, 0.5);
+}
+
+.aside-1 {
+    background: rgba(255, 0, 0, 0.3);
+}
+
+.aside-2 {
+    background: rgba(0, 0, 255, 0.3);
+}
+
+aside img {
+    width: 100%;
+    max-width: 260px;
+}
+
+footer {
+    background-color: black; /* Like the void of space! */
+    width: 100%;
+    height: 20vh;
+}
+
+/* Flexbox Media Queries */
+@media all and (min-width: 600px) {
+
+    .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+
+    .main {flex: 3 0; }
+
+    .aside-1 {order: 1; }
+
+    .main {order: 2; }
+
+    .aside-2 {order: 3; }
+
+    .footer {order: 4; }
+}
+
+@media all (and min-width 452px) {
+
+    .aside-1 {display: hidden;}
 }
 
 /* LinkedIn Sprite */
@@ -118,9 +173,9 @@ hr {
     height: 60px;
     width: 60px;
     margin: auto;
+    margin-bottom: 20px;
     background-position: 780px 60px;
     background-size: 360px;
-    margin-top: 20px;
 }
 
 .my-image:hover {
@@ -129,19 +184,23 @@ hr {
 
 /* Logo Hang on Hover */
 @-webkit-keyframes hvr-hang {
-  0% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-  50% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
+
+    0% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+
+    50% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    100% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
 }
+
 @keyframes hvr-hang {
   0% {
     -webkit-transform: translateY(8px);
