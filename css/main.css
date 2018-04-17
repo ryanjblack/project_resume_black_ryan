@@ -39,7 +39,6 @@ ul li {
     text-align: center;
     list-style-type: none;
     color: white;
-    text-shadow: black 1px 0 10px;
 }
 
 p {
@@ -77,11 +76,19 @@ hr {
 #special {
     font-family: 'Montserrat';
     letter-spacing: 3.5px;
-    text-shadow: black 1px 0 10px;
+}
+
+a {
+    color: white;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
 }
 
 .video {
-    height: 100vh;
+    height: 100%;
 }
 
 /* Headshot Content */

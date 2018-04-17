@@ -1,7 +1,7 @@
 // Set Chart Font Properties
 
 Chart.defaults.global.defaultFontColor = 'white';
-Chart.defaults.global.defaultFontFamily = 'Montserrat';
+Chart.defaults.global.defaultFontFamily = 'Open Sans';
 
 // Top Graph
 
