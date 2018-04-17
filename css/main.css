@@ -28,11 +28,7 @@ h2 {
     font-size: 1.5rem;
     color: white;
     padding: 10px 0 10px 0;
-}
-
-h3 {
-    font-family: 'Open Sans', sans-serif;
-    color: #fefefe; /* White */
+    padding-top: 1em;
 }
 
 ul li {
@@ -54,22 +50,46 @@ p {
     text-shadow: black 1px 0 10px;
 }
 
+li {
+    padding-bottom: 0.5em;
+}
+
+li:last-child {
+    padding-bottom: 1.2em;
+}
+
+.li {
+    padding-bottom: 15px;
+}
+
+.lit {
+    margin-top: 10px;
+}
+
 hr {
     height: 1px;
     background-color: #fefefe; /* White */
     max-width: 320px;
     width: 100%;
     margin: auto;
-    margin-top: 5px;
 }
 
-.top {
-    padding-top: 1em;
+#special {
+    font-family: 'Montserrat';
+    letter-spacing: 3.5px;
+    text-shadow: black 1px 0 10px;
 }
 
-/* Personal Logo */
-#headerlogo {
+.video {
+    height: 100vh;
+}
+
+/* Headshot Content */
+main {
     margin: auto;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 #headshot {
@@ -77,13 +97,9 @@ hr {
     width: 100%;
 }
 
-/* Main Content */
-main {
-    width: 80%;
+/* Personal Logo */
+#headerlogo {
     margin: auto;
-    text-align: center;
-    margin-bottom: 25px;
-    margin-top: 25px;
 }
 
 /* Main Content Wrapper - Flexbox Model */
@@ -103,17 +119,18 @@ main {
 }
 
 #canvas-holder {
-    max-width: 350px;
+    max-width: 500px;
     width: 100%;
     margin: auto;
-    background-color: grey;
+    margin-bottom: 2.5em;
 }
 
 #canvas-holder2 {
-    max-width: 350px;
+    max-width: 500px;
     width: 100%;
     margin: auto;
-    background-color: red;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
 }
 
 .footer {
@@ -134,13 +151,13 @@ main {
 
 aside img {
     width: 100%;
-    max-width: 260px;
+    max-width: 360px;
+    margin-bottom: 2.5em;
+    margin-top: 1.2em;
 }
 
-footer {
-    background-color: black; /* Like the void of space! */
-    width: 100%;
-    height: 20vh;
+html {
+    background-color: black; /* Like the endless void of Space! */
 }
 
 /* Flexbox Media Queries */
@@ -162,9 +179,11 @@ footer {
     .footer {order: 4; }
 }
 
-@media all (and min-width 452px) {
+/* The charts are responsive until they get to lower sizes - the text is also too tiny to read at this size so I made the decision for formatting's sake to remove the charts and footer at small sizes - the charts will still display on most phones and tablets.  */
+@media all and (max-width: 601px) {
 
-    .aside-1 {display: hidden;}
+    .aside-2,
+    .footer {display: none;}
 }
 
 /* LinkedIn Sprite */
@@ -182,7 +201,7 @@ footer {
     background-position: 780px 0;
 }
 
-/* Logo Hang on Hover */
+/*  Hang on Hover Animation */
 @-webkit-keyframes hvr-hang {
 
     0% {
@@ -202,30 +221,37 @@ footer {
 }
 
 @keyframes hvr-hang {
-  0% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-  50% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
+
+    0% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+
+    50% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    100% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
 }
+
 @-webkit-keyframes hvr-hang-sink {
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
+
+    100% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
 }
+
 @keyframes hvr-hang-sink {
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
+
+    100% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
 }
 
 .hvr-hang {

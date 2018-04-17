@@ -1,3 +1,8 @@
+// Set Chart Font Properties
+
+Chart.defaults.global.defaultFontColor = 'white';
+Chart.defaults.global.defaultFontFamily = 'Montserrat';
+
 // Top Graph
 
 var doughnut = {
@@ -5,27 +10,24 @@ var doughnut = {
     data: {
         datasets: [{
             data: [
-                20,
-                20,
-                20,
-                20,
+                50,
+                15,
+                15,
                 20,
             ],
             backgroundColor: [
                 window.chartColors.red,
                 window.chartColors.orange,
-                window.chartColors.yellow,
                 window.chartColors.green,
                 window.chartColors.blue,
             ],
             label: 'Dataset 1'
         }],
         labels: [
-            'Illustrator',
-            'Photoshop',
             'InDesign',
-            'Green',
-            'Blue'
+            'Illustrator',
+            'Audition',
+            'Photoshop'
         ]
     },
     options: {
@@ -35,7 +37,7 @@ var doughnut = {
         },
         title: {
             display: true,
-            text: 'Chart.js Doughnut Chart'
+            text: 'Adobe CC'
         },
         animation: {
             animateScale: true,
@@ -51,31 +53,32 @@ var config = {
     data: {
         datasets: [{
             data: [
-                randomScalingFactor(),
-                randomScalingFactor(),
-                randomScalingFactor(),
-                randomScalingFactor(),
-                randomScalingFactor(),
+                38,
+                22,
+                10,
+                20,
             ],
             backgroundColor: [
-                window.chartColors.red,
-                window.chartColors.orange,
                 window.chartColors.yellow,
                 window.chartColors.green,
+                window.chartColors.red,
                 window.chartColors.blue,
             ],
             label: 'Dataset 1'
         }],
         labels: [
-            'Red',
-            'Orange',
-            'Yellow',
-            'Green',
-            'Blue'
+            'Writing',
+            'Copy Editing',
+            'Wordpress Dev',
+            'Yoast',
         ]
     },
     options: {
-        responsive: true
+        responsive: true,
+        title: {
+            display: true,
+            text: 'SEO copywriting'
+        }
     }
 };
 
